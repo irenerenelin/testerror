@@ -1,0 +1,99 @@
+</!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Style the header */
+	header {
+	  background-color: rgb(250, 157, 102);
+	  padding: 20px;
+	  text-align: center;
+	  font-size: 35px;
+	  color: white;
+	}
+
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+	  float: left;
+	  width: 30%;
+	  height: 450px; /* only for demonstration, should be removed */
+	  background: rgb(255, 238, 176);
+	  padding: 20px;
+	}
+
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	}
+
+	article {
+	  float: left;
+	  padding: 20px;
+	  width: 70%;
+	  background-color: rgb(255, 255, 255);
+	  height: 450px; /* only for demonstration, should be removed */
+	}
+
+	/* Clear floats after the columns */
+	section:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Style the footer */
+	footer {
+	  background-color: rgb(250, 157, 102);
+	  padding: 10px;
+	  text-align: center;
+	  color: white;
+	}
+
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+	  nav, article {
+	    width: 100%;
+	    height: auto;
+	  }
+	}
+	</style>
+
+	<header>
+	  <h2>林愛芸 Irene Lin</h2>
+	</header>
+
+	<section>
+	  <nav>
+	    <ul>
+	      <li><a href="selfFile.html">自我介紹</a></li>
+	      <li><a href="school.html">學校介紹</a></li>
+	      <li><a href="photo.html">生活照</a></li>
+	    </ul>
+	  </nav>
+	  
+	  <article>
+	    <h1>學校介紹</h1>
+	    <h2 style="color:rgb(2, 108, 214);">國立臺灣科技大學 NTUST</h2>
+	    <p>國立台灣工業技術學院成立於民國六十三年八月一日，為我國第一所技術職業教育高等學府。建校之目的，在因應我國經濟與工業迅速發展之需求，以培養高級工程技術及管理人才為目標，同時建立完整之技術職業教育體系。本校校地約48公頃，校本部位於臺北市基隆路四段四十三號，現有大學部學生5,600位，研究生4,900位，專任教師420位。</p>
+	    
+	  </article>  
+
+	</section>
+
+	<footer> T H I S  i s  I R E N E </footer>
+
+</head>
+
+</html>
